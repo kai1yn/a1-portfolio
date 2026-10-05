@@ -1,0 +1,38 @@
+:root{
+    --text-color: hsl(345, 8%, 10%);
+    --link-color: #2d2a2b;
+    --background-color: hsl(345, 50%, 98%);
+}
+
+@font-face {
+    font-family: 'Rascal';
+    src: url('fonts/RASCAL__.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Google Sans', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+h1{
+    font-family: 'Rascal', cursive;
+    font-size: 3rem;
+    color: var(--text-color);
+}
+
+a{
+    color:var(--link-color);
+    text-decoration: none;
+}
