@@ -26,6 +26,7 @@ body{
     background-color: var(--background-color);
     color: var(--text-color);
     padding: 10px;
+    min-width: 320px;
 }
 h1{
     font-family: 'Rascal', cursive;
@@ -43,6 +44,26 @@ a{
     text-decoration: none;
 }
 
+#introduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    margin-top: 50px;
+    gap: 30px;
+}
+#introduction .text{
+    flex: 5;
+}
+#introduction > .image{
+    flex: 3;
+}
+#introduction > .image img{
+    width: 100%;
+    height: auto;
+}
+
+
 @media (max-width: 600px) {
    
     nav a {
@@ -57,4 +78,15 @@ a{
     padding: 10px;
     text-decoration: none;
     }
+
+    #introduction .text{
+        flex: 1;
+    }
+    #introduction > .image{
+        flex: 1;
+    }
+    #introduction > .image img{
+    width: 100%;
+    height: auto;
+}
 }
