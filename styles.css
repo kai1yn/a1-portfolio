@@ -1,12 +1,31 @@
 :root{
-    --text-color: hsl(345, 8%, 10%);
+    --text-color: #253559;
     --link-color: #2d2a2b;
     --background-color: hsl(345, 50%, 98%);
 }
+@font-face {
+    font-family: 'pixelta';
+    src: url('fonts/Pixelta.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
-    font-family: 'Rascal';
-    src: url('fonts/RASCAL__.TTF') format('truetype');
+    font-family: 'doodle';
+    src: url('fonts/Helveticamazing.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'display';
+    src: url('fonts/CreatoDisplay-Medium.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'kiwi';
+    src: url('fonts/KiwiSoda.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -23,48 +42,91 @@ html{
 
 body{
     font-family: 'Google Sans', sans-serif;
-    background-color: var(--background-color);
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
     color: var(--text-color);
     padding: 10px;
     min-width: 320px;
 }
 h1{
-    font-family: 'Rascal', cursive;
+    font-family: 'doodle', sans-serif;
     font-size: 3rem;
     color: var(--text-color);
+    letter-spacing: 5px;
 }
+p{
+    font-family: 'display', sans-serif;
+    color: var(--text-color);
+}
+
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 a{
     color:var(--link-color);
     padding: 10px;
     text-decoration: none;
+    font-family: 'display', sans-serif;
+    color: var(--text-color);
+    font-weight: bold;
 }
 
+
+
 #introduction {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+    
+}
+#introduction .text h1{
+   
+   font-size: 5rem;
+}
+
+
+#introduction > .image img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+#education{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 80px;
     margin-top: 50px;
     gap: 30px;
-}
-#introduction .text{
-    flex: 5;
-}
-#introduction > .image{
-    flex: 3;
-}
-#introduction > .image img{
-    width: 100%;
-    height: auto;
-}
 
+}
+#education .school{
+    flex: 1;
+}
+#education .relevant-coursework{
+    flex: 1;
+}
 
 @media (max-width: 600px) {
+    
+    #education {
+        flex-direction: column;
+    }
+    #introduction .text{
+        
+        font-size: 20px;
+    }
+    
+   
    
     nav a {
         font-size: 24px;
@@ -79,14 +141,6 @@ a{
     text-decoration: none;
     }
 
-    #introduction .text{
-        flex: 1;
-    }
-    #introduction > .image{
-        flex: 1;
-    }
-    #introduction > .image img{
-    width: 100%;
-    height: auto;
+    
 }
-}
+
