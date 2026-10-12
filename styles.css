@@ -1,6 +1,6 @@
 :root{
-    --text-color: #253559;
-    --link-color: #2d2a2b;
+    --text-color: #000000;
+    --link-color: #000000;
     --background-color: hsl(345, 50%, 98%);
 }
 @font-face {
@@ -30,6 +30,17 @@
     font-style: normal;
 }
 
+
+@keyframes fadeIn {
+    from {scale: 0.9; }
+    to {scale: 1; }
+    }
+
+@keyframes wiggle{
+    0% { scale: 0.99; }
+    50% { scale: 1.01; }
+    100% { scale: 0.99; }
+}
 *{
     margin: 0;
     padding: 0;
@@ -53,10 +64,22 @@ h1{
     font-size: 3rem;
     color: var(--text-color);
     letter-spacing: 5px;
+    margin-bottom: 10px;
 }
+h1:hover{
+    color: rgb(235, 1, 40);
+}
+
+
+a:hover{
+    color: rgb(235, 1, 40);
+}
+
+
 p{
     font-family: 'display', sans-serif;
     color: var(--text-color);
+    line-height: 1.5;
 }
 
 nav{
@@ -65,7 +88,8 @@ nav{
     align-items: center;
     position: sticky;
     position: -webkit-sticky;
-    top: 10px;
+    top: 10px;  
+     
 }
 a{
     color:var(--link-color);
@@ -75,10 +99,13 @@ a{
     color: var(--text-color);
     font-weight: bold;
 }
-
-
+ul{
+    font-family: 'display', sans-serif;
+    line-height: 1.5;
+}
 
 #introduction {
+    animation: fadeIn 0.3s linear;
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -88,10 +115,14 @@ a{
     text-align: center;
     padding: 0;
     margin-top: 0;
-    
 }
+
 #introduction .text h1{
-   
+   animation: wiggle 1.5s ease-in-out infinite;
+   font-size: 5rem;
+}
+
+#introduction .text :hover{
    font-size: 5rem;
 }
 
@@ -101,27 +132,28 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px;
+    padding: 300px;
     margin-top: 50px;
     gap: 30px;
+    
 }
 #aboutme .image {
    flex: 1;
 }
 
 #aboutme .image img {
-    width: 100%;
-    height: auto;
+    scale: 0.4em;
     border-radius: 50%;
+    max-width: 300px;
 }
 #aboutme .text {
-   
-   flex: 2;
+   flex: 1;
 }
 
 #education{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     padding: 80px;
     margin-top: 50px;
@@ -130,40 +162,87 @@ a{
 }
 #education .school{
     flex: 1;
+    max-width: 850px;
 }
 #education .relevant-coursework{
     flex: 1;
+    max-width: 850px;
 }
 
-#skills {
+#experience {
     min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 50px;
+    gap: 30px;
+}
+#experience .media{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 80px;
-    margin-top: 50px;
+
     gap: 30px;
-}
-#skills .skills {
-   flex: 1;
+    max-width: 900px;
 }
 
-#skills .programs {
-   
-   flex: 1;
+
+#experience .media video{
+    max-height: 350px;
+    height: auto;
+    border-radius: 10px;
+    flex:1
+}
+
+#experience .media .image1 img{
+    max-height: 350px;
+    height: auto;
+    border-radius: 10px;
+    flex:1
+}
+#experience .media .image2 img{
+    max-height: 350px;
+    height: auto;
+    border-radius: 10px;
+    flex:1
+}
+#experience .logos img{
+    max-width: 70px;
+    height: auto;
+    border-radius: 10px;
+    flex: 1;
+}
+#experience .logos{
+    display: flex;
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    padding: 90px;
+}
+
+#experience .experience {
+
+   flex: 5;
+   max-width: 850px;
 }
 
 @media (max-width: 600px) {
     
     #aboutme {
         flex-direction: column;
+        padding: 80px;
     }
     #introduction .text{
         
         font-size: 20px;
     }
-    
     
     nav a {
         font-size: 24px;
