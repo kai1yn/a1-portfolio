@@ -3,12 +3,6 @@
     --link-color: #000000;
     --background-color: hsl(345, 50%, 98%);
 }
-@font-face {
-    font-family: 'pixelta';
-    src: url('fonts/Pixelta.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'doodle';
@@ -22,14 +16,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-@font-face {
-    font-family: 'kiwi';
-    src: url('fonts/KiwiSoda.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 
 @keyframes fadeIn {
     from {scale: 0.9; }
@@ -87,15 +73,14 @@ nav{
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    position: -webkit-sticky;
     top: 10px;  
-     
 }
 a{
     color:var(--link-color);
+
     padding: 10px;
     text-decoration: none;
-    font-family: 'display', sans-serif;
+    font-family: 'Google Sans', sans-serif;
     color: var(--text-color);
     font-weight: bold;
 }
@@ -244,7 +229,7 @@ ul{
     padding: 20px;
     
 }
-#experience .footer{
+footer{
     padding-top: 100px;
     display: flex;
     justify-content: center;
