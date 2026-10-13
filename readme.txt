@@ -1,4 +1,4 @@
---Readme document for *YOUR NAME*, *YOUR_EMAIL@uci.edu*--
+--Readme document for *Kailyn Whang*, *kmwhang.edu*--
 
 A reminder on academic integrity, as described in the syllabus.
 
@@ -11,44 +11,58 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
 */10
-- */1 Readme
-- */2 Basic HTML content
-- */1 Basic CSS styling
-- */1 Advanced feature
-- */2 Responsive layout
-- */1 Passes validation checks
-- */2 Embraces spirit of the assignment
+- 1/1 Readme
+- 2/2 Basic HTML content
+- 1/1 Basic CSS styling
+- 1/1 Advanced feature
+- 2/2 Responsive layout
+- 1/1 Passes validation checks
+- 2/2 Embraces spirit of the assignment
 
 2. What (a) basic features, (b) CSS features, and (c) advanced features did you include in your portfolio?
 
 (a) Basic features
 
-
+ - Several pictures with alt text
+ - Appropriate headings and paragraphs
+ - Links to Github and Linkedin
+ - Multiple Pages
+ - Custom icons used for Github and Linkedin
 
 (b) CSS features
 
+- Added padding and made website Responsive
+- Had a black and red color pallete that changed when you hover over text.
+- Added custom fonts, google fonts and downloaded ttf files
 
 
 (c) Advanced features
 
-
+- embeded video file and included a fallback
 
 
 3. Did you ignore any of the warnings or errors presented by the accessibility checker? If so, why does this not seem like an accessibility concern? If it's useful, you can consolidate your thoughts on multiple warnings/errors if the rationale is similar.
 
-
+Yes, this is why:
+    - For known errors it marked my icons as italics which is incorrect.
+    - The potential problems were about the clarity of my images or marking images as decorative
 
 4. How long, in hours, did it take you to complete this assignment?
 
-
+It took around 12-14 hours to complete this assignment.
 
 5. What online resources did you consult when completing this assignment? (list specific URLs, describe queries to Generative AI, or use of AI-based code completion)
 
+https://youtu.be/Slxdo0Dqxlk?si=QECVKKn-YNq02na4 : how to make it responsive
+https://youtu.be/ceNMP-aQkQ4?si=KFI5BF4TSvzSn9mZ : css hover effects
+https://www.w3schools.com/css/css3_fonts.asp : importing custom fonts
+https://stackoverflow.com/questions/5721904/make-body-fill-entire-screen: make title screen and pages fill screen
 
 
 6. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
 
-
+Not applicable.
 
 7. Is there anything special we need to know in order to run your code?
 
+It was tested using Live Server.
